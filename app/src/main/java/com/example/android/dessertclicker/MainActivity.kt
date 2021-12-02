@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Timber.i("onCreate Called")
 
-        dessertTimer = DessertTimer()
+        dessertTimer = DessertTimer(this.lifecycle)
 
         // Use Data Binding to get reference to the views
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
